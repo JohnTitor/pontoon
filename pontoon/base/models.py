@@ -1577,7 +1577,7 @@ class UserProfile(models.Model):
     )
     # Other fields here.
     quality_checks = models.BooleanField(default=True)
-    force_suggestions = models.BooleanField(default=False)
+    force_suggestions = models.BooleanField(default=True)
 
     # Used to redirect a user to a custom team page.
     custom_homepage = models.CharField(max_length=20, blank=True, null=True)
